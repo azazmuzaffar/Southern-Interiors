@@ -2,8 +2,8 @@
 
 ## All pages are done
 
-+ #### "Individual project" page is linked with the "projects" link in footer.
-+ #### Get a Quote is currently linked with contact page. 
++ ### "Individual project" page is linked with the "projects" link in footer.
++ ### Get a Quote is currently linked with contact page. 
 
 <br/>
 
