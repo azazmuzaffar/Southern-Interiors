@@ -2,6 +2,17 @@
 
 /* >>>>>>>>>>>>> SERVICES <<<<<<<<<<<<< */
 
+/* >>>>>> Font - Luxora Grotesk <<<<<<< */
+
+@font-face {
+  font-family: "Luxora Grotesk";
+  src: url("../fonts/LuxoraGrotesk/LuxoraGrotesk-Regular.woff2") format("woff2"),
+    url("../fonts/LuxoraGrotesk/LuxoraGrotesk-Regular.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>> SERVICES <<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
@@ -11,28 +22,62 @@
 }
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Project Title <<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.project-details {
+  position: relative;
+  padding: 65px 119px;
+  background: white;
+}
+.project-details .details {
+  position: absolute;
+  z-index: 999;
+  width: fit-content;
+  padding: 50px 80px 80px 80px;
+  background: #f5ea04;
+  width: 487px;
+  top: -210px;
+}
+.project-details .details h1 {
+  font: normal normal normal 68px/73px "Anton";
+  letter-spacing: 5.44px;
+  color: #2b2e34;
+  text-transform: uppercase;
+  text-shadow: 6px 6px 8px #c09902;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.project-details .details .box {
+  position: absolute;
+  width: 594px;
+  height: 594px;
+  border-top: 5px solid #0410ba;
+  border-right: 5px solid #0410ba;
+  left: -11%;
+}
+.project-details .details p {
+  font: normal normal normal 17px/26px "Quasimoda";
+  letter-spacing: 0.34px;
+  color: #000000;
+  padding-top: 80px;
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>> Gallery <<<<<<<<<<<<< */
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 
-.project-gallery {
-  width: 100%;
-}
-.project-gallery img {
-  width: 100%;
-  height: auto;
-}
-.project-gallery .col-lg-12,
-.project-gallery .col-lg-4,
-.project-gallery .col-lg-8 {
+.gallery .col-lg-12,
+.gallery .col-lg-4,
+.gallery .col-lg-8 {
   position: relative;
   padding: 0;
+  cursor: pointer;
 }
-.project-gallery .col-lg-4.services-included {
-  background: #f5ea04;
-}
-.project-gallery .col-lg-12 img {
+.gallery img {
   width: 100%;
-  height: fit-content;
+  margin: 0;
+  padding: 0;
 }
 .grid {
   position: relative;
@@ -62,11 +107,10 @@
   max-width: 100%;
   opacity: 0.8;
 }
-
 /* >>>>>>> Image Effect <<<<<<  */
 
 figure.image-effect {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(19, 19, 19);
 }
 figure.image-effect img {
   opacity: 1;
@@ -77,8 +121,8 @@ figure.image-effect img {
 }
 figure.image-effect:hover img {
   opacity: 0.75;
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07s);
 }
 figure.image-effect h2 {
   margin-top: 20%;
@@ -105,4 +149,121 @@ figure.image-effect:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);
   transform: translate3d(0, 0, 0) scale(1);
+}
+.gallery .col-lg-4.services-included {
+  background: #f5ea04;
+  cursor: unset;
+}
+.gallery .col-lg-4.services-included .the-content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gallery .col-lg-4.services-included .the-content .make-it-center {
+  display: table;
+  margin: 0 auto;
+}
+.gallery .col-lg-4.services-included p {
+  font: normal normal normal 16px/21px "Luxora Grotesk";
+  letter-spacing: 6.08px;
+  color: #2c2e33;
+}
+.gallery .col-lg-4.services-included h1 {
+  font: normal normal bold 40px/59px "Quasimoda";
+  letter-spacing: 3.2px;
+  color: #2c2e33;
+  text-transform: uppercase;
+}
+
+/* The Modal (background) */
+
+.gallery .modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding: 150px 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.835);
+}
+
+/* Modal Content */
+
+.gallery .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+
+.gallery .close {
+  color: white;
+  position: absolute;
+  opacity: 1;
+  top: -55px;
+  right: 0px;
+  font-size: 45px;
+  font-weight: bold;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.gallery .close:hover {
+  color: white;
+  opacity: 1;
+}
+
+/* Hide the slides by default */
+
+.gallery .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.gallery .prev,
+.gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Position the "next button" to the right */
+
+.gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Caption text */
+
+.gallery .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.gallery img.demo {
+  opacity: 0.6;
+}
+.gallery .gallery .active,
+.gallery .demo:hover {
+  opacity: 1;
 }

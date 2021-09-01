@@ -35,7 +35,9 @@
           <a href="../gallery.html" class="nav-right">Gallery</a>
           <a href="../services.html" class="nav-right">Services</a>
           <a href="../contact.html" class="nav-right">Contact</a>
-          <a href="#" class="nav-right get-a-quoto">Get A Quoto</a>
+          <a href="../contact.html" class="nav-right get-a-quoto"
+            >Get A Quoto</a
+          >
         </li>
       </ul>
     </nav>
@@ -49,71 +51,194 @@
     </div>
 
     <!-- >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< -->
+    <!-- >>>>>>>>>>> Project Title <<<<<<<<<< -->
+    <!-- >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< -->
+
+    <div class="project-details">
+      <div class="container-fluid">
+        <div class="details">
+          <h1>
+            WYUNA <br />
+            PRESERVE
+          </h1>
+          <div class="box"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam volu ptua. <br /><br />
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>> Projects <<<<<<<<<<<<< -->
     <!-- >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<< -->
 
     <!-- >>>>>>>>>>>>> Projects <<<<<<<<<<<<< -->
 
-    <div class="project-gallery">
+    <div class="gallery">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/1.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/1.jpg"
+                  onclick="openModal();currentSlide(1)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/2.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/2.jpg"
+                  onclick="openModal();currentSlide(2)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/3.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/3.jpg"
+                  onclick="openModal();currentSlide(3)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
-          <div class="col-lg-4 services-included"></div>
+          <div class="col-lg-4 services-included">
+            <div class="the-content">
+              <div class="make-it-center">
+                <p>SERVICES INCLUDED:</p>
+                <h1>
+                  GIB FIXING <br />
+                  GIB BOARD <br />
+                  STOPPING
+                </h1>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/4.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/4.jpg"
+                  onclick="openModal();currentSlide(4)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
           <div class="col-lg-8">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/5.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/5.jpg"
+                  onclick="openModal();currentSlide(5)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/6.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/6.jpg"
+                  onclick="openModal();currentSlide(6)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/7.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/7.jpg"
+                  onclick="openModal();currentSlide(7)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="grid">
               <figure class="image-effect">
-                <img src="../images/projects/gallery/8.jpg" alt="" />
+                <img
+                  src="../images/projects/gallery/8.jpg"
+                  onclick="openModal();currentSlide(8)"
+                  class="hover-shadow"
+                />
               </figure>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <!-- Close the full view -->
+          <span
+            class="close cursor"
+            onclick="closeModal()"
+            style="color: white; opacity: 1"
+            >&times;</span
+          >
+          <div class="mySlides">
+            <img src="../images/projects/gallery/1.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/2.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/3.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/4.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/5.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/6.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/7.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides">
+            <img src="../images/projects/gallery/8.jpg" style="width: 100%" />
+          </div>
+          <!-- Next/previous controls -->
+          <a
+            class="prev"
+            onclick="plusSlides(-1)"
+            style="color: white; opacity: 1"
+            >&#10094;</a
+          >
+          <a
+            class="next"
+            onclick="plusSlides(1)"
+            style="color: white; opacity: 1"
+            >&#10095;</a
+          >
         </div>
       </div>
     </div>
@@ -180,7 +305,7 @@
                       <a href="../our-team.html">our Team</a>
                     </li>
                     <li>
-                      <a href="#">Projects</a>
+                      <a href="../projects/wyuna-preserve.html">Projects</a>
                     </li>
                     <li>
                       <a href="../services.html">services</a>
@@ -197,7 +322,9 @@
                   <ul>
                     <img src="../images/svg/corners.svg" alt="corners" />
                     <li class="quoto">
-                      <a href="" class="get-a-quoto">GET A QUOTE</a>
+                      <a href="../contact.html" class="get-a-quoto"
+                        >GET A QUOTE</a
+                      >
                     </li>
                     <li>
                       <a href="tel:0276228326">027 622 8326</a>
@@ -307,5 +434,8 @@
 
     <!-- >>> Bootstrap | Front End Framework <<< -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- >>> Custom Js <<< -->
+    <script src="../js/app.js"></script>
   </body>
 </html>
