@@ -1,0 +1,455 @@
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Common <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quasimoda", sans-serif;
+}
+::selection {
+  background: #f5ea04;
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Navbar <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
+  padding: 0px 44px 0px 119px;
+  background: transparent;
+  z-index: 99;
+}
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 5.4px;
+  color: white;
+  padding: 10px 24px;
+  /* Adding 5.4px to letter spacing */
+  padding-left: 29.4px;
+  /* To cover the margin of text */
+  padding-top: 12px;
+  border-radius: 2px;
+}
+.navbar li a:hover {
+  color: white;
+  font-weight: bold;
+  background: #0410baed;
+}
+.navbar li a.active {
+  color: white;
+  font-weight: bold;
+  background: #0410baed;
+}
+.navbar li a.get-a-quoto {
+  padding-right: 9px;
+  /* Adding 5.4px to letter spacing */
+  padding-left: 14.4px;
+  background: #f5ea04;
+  color: #0000c2;
+  letter-spacing: 3.6px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Banner <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.hero-banner .background-image {
+  background-image: url("../images/home/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 918px;
+}
+.hero-banner .content {
+  position: absolute;
+  left: 120px;
+  top: 57%;
+  transform: translateY(-50%);
+}
+.hero-banner .content h2 {
+  font: normal normal normal 24px/40px "Quasimoda";
+  letter-spacing: 9.12px;
+  margin-right: -9.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero-banner .content h1 {
+  font: normal normal normal 70px/87px "Anton";
+  letter-spacing: 14px;
+  margin-right: -14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>> Gibbstopping Queenstown <<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.gibbstopping-queenstown {
+  height: fit-content;
+  background: #f5ea04;
+}
+.gibbstopping-queenstown h1 {
+  text-align: center;
+  font: normal normal normal 85px/67px "Anton";
+  letter-spacing: 17px;
+  color: #2b2e34;
+  margin: 0;
+  padding: 64px 0px;
+  text-shadow: 6px 6px 8px #c09902;
+}
+
+/* >>>>> Gibbstopping Section 1 & 2 <<<<< */
+
+.gibbstopping-section-1 {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+.gibbstopping-section-1 .text-area {
+  position: relative;
+  padding: 87px 119px;
+}
+.gibbstopping-section-1.section-2 .text-area {
+  padding-top: 124px;
+}
+.gibbstopping-section-1 .text-area h1 {
+  font: normal normal normal 30px/45px "Anton";
+  letter-spacing: 2.4px;
+  color: #2b2e34;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.gibbstopping-section-1 .text-area p {
+  font: normal normal normal 17px/26px "Quasimoda";
+  letter-spacing: 0.34px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.gibbstopping-section-1 .text-area a {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  margin-right: -6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+.gibbstopping-section-1 .text-area span span {
+  padding: 0px 30px;
+}
+.gibbstopping-section-1 .image-area {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.gibbstopping-section-1 .image-area img {
+  height: 100%;
+  width: auto;
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> Our Services <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.homepage-section-our-services {
+  height: fit-content;
+  background: #f5ea04;
+}
+.homepage-section-our-services h1 {
+  text-align: left;
+  font: normal normal normal 40px/60px "Anton";
+  letter-spacing: 3.2px;
+  color: #2b2e34;
+  margin: 0;
+  padding: 35px 119px;
+}
+
+/* >>>>>>>> Our Services Section-1 <<<<<<< */
+
+.our-services-section-1 {
+  height: fit-content;
+  padding: 131px 119px;
+}
+.our-services-section-1 .col-lg-4 {
+  margin: 0;
+  padding: 0;
+}
+.our-services-section-1 .icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-services-section-1 .icon-text .icon {
+  height: 86px;
+  padding-right: 60px;
+}
+.our-services-section-1 .icon-text .text h1 {
+  font: normal normal normal 30px/41px "Anton";
+  letter-spacing: 2.4px;
+  color: #2b2e34;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* >>>>>>>> Our Services Section-2 <<<<<<< */
+
+.our-services-section-2 {
+  height: fit-content;
+  text-align: center;
+}
+.our-services-section-2 .col-lg-4 {
+  margin: 0;
+  padding: 0;
+}
+.our-services-section-2 .the-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 731px;
+  background-color: #a8a8a8;
+  box-shadow: inset 0 -300px 300px -100px rgba(26, 26, 26, 0.767);
+}
+.our-services-section-2 .the-background-1 {
+  background: url("../images/home/high-quality.jpg");
+  background-position: center center;
+}
+.our-services-section-2 .the-background-2 {
+  background: url("../images/home/efficient.jpg");
+  background-position: center center;
+}
+.our-services-section-2 .the-background-3 {
+  background: url("../images/home/experienced.jpg");
+  background-position: center center;
+}
+.our-services-section-2 .content {
+  text-align: left;
+  position: absolute;
+  padding: 66px 120px;
+  bottom: 0;
+}
+.our-services-section-2 .content h1 {
+  font: normal normal normal 40px/60px "Anton";
+  letter-spacing: 3.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.our-services-section-2 .content p {
+  font: lighter lighter normal 18px/26px "Quasimoda";
+  letter-spacing: 0.36px;
+  color: #ffffff;
+  text-align: justify;
+}
+.our-services-section-2 .content a {
+  font: lighter lighter normal 18px/26px "Quasimoda";
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Client Feedback <<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.feedback-from-our-clients {
+  height: fit-content;
+  background: #f5ea04;
+}
+.feedback-from-our-clients h1 {
+  text-align: left;
+  font: normal normal normal 40px/60px "Anton";
+  letter-spacing: 3.2px;
+  color: #2b2e34;
+  margin: 0;
+  padding: 35px 119px;
+}
+.feedback-from-client-1 {
+  height: fit-content;
+  padding: 74px 119px;
+  padding-bottom: 50px;
+}
+.feedback-from-client-1 .feedback {
+  display: flex;
+  justify-content: center;
+}
+.feedback .image-icon {
+  padding-right: 148px;
+}
+.feedback .image-icon img {
+  height: 185px;
+}
+.feedback-from-client-1 .client-feedback h1 {
+  font: normal normal normal 40px/60px "Anton";
+  letter-spacing: 3.2px;
+  color: #2b2e34;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.feedback-from-client-1 .client-feedback p {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1800px) {
+  .feedback-from-client-1 .client-feedback h1 br {
+    display: none;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+footer {
+  height: fit-content;
+  margin: 0;
+  background: #f5ea04;
+  overflow: hidden;
+}
+.footer {
+  padding: 0px 119px;
+}
+footer .bottom-head {
+  width: 488px;
+  height: 15px;
+  background: #2b2e34;
+}
+footer .footer-content .left,
+footer .footer-content .middle,
+footer .footer-content .right {
+  padding: 0;
+}
+footer .footer-content .left {
+  width: 48%;
+  padding: 35px 0px;
+}
+footer .footer-content .middle {
+  width: 18%;
+}
+footer .footer-content .right {
+  width: 32%;
+}
+footer .footer-content {
+  padding: 63px 0px;
+  padding-bottom: 106px;
+}
+footer .footer-content .our-experience p {
+  font: normal normal normal 16px/27px "Quasimoda";
+  letter-spacing: 6.08px;
+  color: #2b2e34;
+}
+footer .footer-content .our-experience h1 {
+  font: normal normal normal 50px/61px "Anton";
+  letter-spacing: 12px;
+  color: #2b2e34;
+}
+footer .footer-content .company ul {
+  list-style: none;
+  padding: 35px;
+  padding-top: 40px;
+  position: relative;
+}
+footer .footer-content .company ul img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .footer-content .company ul li {
+  padding-bottom: 23px;
+}
+footer .footer-content .company ul li:last-child {
+  padding-bottom: 0px;
+}
+footer .footer-content .company ul li a {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+footer .footer-content .contacts ul {
+  list-style: none;
+  padding: 35px;
+  padding-top: 30px;
+  position: relative;
+}
+footer .footer-content .contacts ul img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .footer-content .contacts ul li {
+  padding-bottom: 23px;
+}
+footer .footer-content .contacts ul li.quoto {
+  padding-bottom: 44px;
+}
+footer .footer-content .contacts ul li.email {
+  padding-bottom: 15px;
+}
+footer .footer-content .contacts ul li:last-child {
+  padding-bottom: 0px;
+}
+footer .footer-content .contacts ul li a {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+footer .footer-content .contacts ul li .get-a-quoto {
+  font: normal normal bold 18px/67px "Quasimoda";
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  padding: 16px 18px;
+  padding-bottom: 14px;
+  margin: 0;
+  background: #2b2e34;
+}
+footer .footer-content .contacts ul li .icons {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-content .contacts ul li .icons li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+footer .footer-content .contacts ul li .icons li a {
+  text-decoration: none;
+}
+
+/* >>>>>>>>>>>>>>>> Mini Footer <<<<<<<<<<<<<< */
+
+.mini-footer {
+  background: #57575a;
+  padding: 15px 119px;
+  padding-bottom: 12px;
+  display: flex;
+}
+.mini-footer p {
+  margin: 0;
+  font: normal normal normal 16px/27px Quasimoda;
+  letter-spacing: 6.08px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.mini-footer .left {
+  width: 50%;
+  padding: 0px 10px;
+}
+.mini-footer .right {
+  width: 50%;
+  padding: 0px 76px;
+  text-align: right;
+}

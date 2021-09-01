@@ -1,0 +1,108 @@
+/* All the new changes will for "SERVICES" page will make here */
+
+/* >>>>>>>>>>>>> SERVICES <<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> SERVICES <<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.hero-banner .background-image {
+  background-image: url("../images/projects/banner.jpg");
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Gallery <<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.project-gallery {
+  width: 100%;
+}
+.project-gallery img {
+  width: 100%;
+  height: auto;
+}
+.project-gallery .col-lg-12,
+.project-gallery .col-lg-4,
+.project-gallery .col-lg-8 {
+  position: relative;
+  padding: 0;
+}
+.project-gallery .col-lg-4.services-included {
+  background: #f5ea04;
+}
+.project-gallery .col-lg-12 img {
+  width: 100%;
+  height: fit-content;
+}
+.grid {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.grid figure img {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+/* >>>>>>> Image Effect <<<<<<  */
+
+figure.image-effect {
+  background-color: rgb(20, 20, 20);
+}
+figure.image-effect img {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+figure.image-effect:hover img {
+  opacity: 0.75;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+figure.image-effect h2 {
+  margin-top: 20%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+figure.image-effect p {
+  margin: 1em 0 0;
+  padding: 3em;
+  border: 1px solid #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0) scale(1.1);
+  transform: translate3d(0, 20px, 0) scale(1.1);
+}
+figure.image-effect:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.image-effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+}
