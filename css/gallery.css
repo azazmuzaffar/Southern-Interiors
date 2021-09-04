@@ -1,0 +1,160 @@
+/* All the new changes will for "GALLERY" page will make here */
+
+/* >>>>>>>>>>>>> OUR TEAM <<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> GALLERY <<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.hero-banner .background-image {
+  background-image: url("../images/gallery/banner.jpg");
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> Gallery. <<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.our-services-section-2 .the-background {
+  position: relative;
+  height: 583px;
+  width: 100%;
+}
+.our-services-section-2 .the-background-1 {
+  background: url("../images/gallery/places/queenstown.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-2 {
+  background: url("../images/gallery/places/soudley-court.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-3 {
+  background: url("../images/gallery/places/lake-esplande.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-4 {
+  background: url("../images/gallery/places/jacks-point.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-5 {
+  background: url("../images/gallery/places/bendemeer.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-6 {
+  background: url("../images/gallery/places/threapwood.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .content p {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>> Wyuna Preserve <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.percision {
+  position: relative;
+}
+.percision .row .col-lg-4 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* >>> First column [ Image ] <<< */
+.percision .row .col-lg-4.first-col {
+  padding: 60px 119px 50px 119px;
+}
+/* >>> Second column [ Heading ] <<< */
+.percision .row .col-lg-4.sec-col {
+  padding: 50px 50px 0px 50px;
+}
+/* >>> Second column [ Text ] <<< */
+.percision .row .col-lg-4.sec-col-row {
+  padding: 45px 50px 120px 50px;
+  padding-right: 10%;
+}
+/* >>> Third column [ Text ] <<< */
+.percision .row .col-lg-4.third-col {
+  padding: 45px 50px 120px 0px;
+  padding-right: 13%;
+}
+@media screen and (max-width: 1536px) {
+  /* >>> First column [ Image ] <<< */
+  .percision .row .col-lg-4.first-col {
+    padding: 60px 75px 50px 75px;
+  }
+  /* >>> Second column [ Text ] <<< */
+  .percision .row .col-lg-4.sec-col-row {
+    padding: 45px 50px 120px 50px;
+    padding-right: 50px;
+  }
+  /* >>> Third column [ Text ] <<< */
+  .percision .row .col-lg-4.third-col {
+    padding-right: 50px;
+  }
+}
+.percision .row .the-image {
+  position: absolute;
+}
+.percision .the-heading-text {
+  padding: 29px 0px;
+}
+.percision .the-heading-text p {
+  font: normal normal normal 16px/27px "Quasimoda";
+  letter-spacing: 6.08px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+.percision .the-heading-text h3 {
+  margin: 0;
+}
+.percision .row.white .col-lg-4 {
+  background: white;
+}
+.percision .row.yellow {
+  background: #f5ea04;
+}
+.percision .the-text p {
+  font: normal normal normal 18px/26px "Quasimoda";
+  letter-spacing: 0.36px;
+  color: #000000;
+}
+.percision .the-text a {
+  font: normal normal bold 18px/67px "Quasimoda";
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  padding: 18px 16px 16px 16px;
+  text-decoration: none;
+  background: #0410ba;
+}
+@media screen and (max-width: 1536px) {
+  .percision .the-text a {
+    font-size: 16px;
+    padding: 15px 14px 13px 14px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>> Interior projects Section-1 <<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<< */
+
+@media screen and (max-width: 1800px) {
+  .feedback-from-client-1 .client-feedback h1 br {
+    display: none;
+  }
+  .gibbstopping-section-1 .row {
+    width: 75%;
+  }
+}

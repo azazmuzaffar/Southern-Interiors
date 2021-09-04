@@ -1,0 +1,741 @@
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Common <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quasimoda", sans-serif;
+}
+::selection {
+  background: #ffee01;
+}
+h2 {
+  font: normal normal normal 40px/60px "Anton";
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+h3 {
+  font: normal normal normal 30px/45px "Anton";
+  letter-spacing: 2.4px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1536px) {
+  h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  h3 {
+    font-size: 28px;
+    letter-spacing: 2.2px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Navbar <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
+  padding: 0px 44px 0px 119px;
+  background: transparent;
+  z-index: 99;
+}
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 5.4px;
+  color: white;
+  padding: 10px 24px;
+  /* Adding 5.4px to letter spacing */
+  padding-left: 29.4px;
+  /* To cover the margin of text */
+  padding-top: 12px;
+  border-radius: 2px;
+}
+.navbar li a:hover {
+  color: white;
+  background: #0410baed;
+}
+.navbar li a.active {
+  color: white;
+  font-weight: bold;
+  background: #0410baed;
+}
+.navbar li a.get-a-quoto {
+  padding-right: 9px;
+  /* Adding 5.4px to letter spacing */
+  padding-left: 14.4px;
+  background: #f5ea04;
+  color: #0000c2;
+  letter-spacing: 3.6px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+/* Some of the chages will also be made at 1800px width*/
+/* Other components will have the same design untill 1536px width */
+@media screen and (max-width: 1800px) {
+  .navbar {
+    padding: 0px 44px 0px 75px;
+  }
+  .navbar .logo {
+    width: 400px;
+  }
+  .navbar li a {
+    font-size: 16px;
+    padding: 8px 18px;
+    /* Adding 5.4px to letter spacing */
+    padding-left: 23.4px;
+    /* To cover the margin of text */
+    padding-top: 10px;
+  }
+  .navbar li a.get-a-quoto {
+    padding-right: 7px;
+    /* Adding 5.4px to letter spacing */
+    padding-left: 10.4px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .navbar {
+    padding: 0px 34px 0px 69px;
+  }
+  .navbar .logo {
+    width: 350px;
+  }
+  .navbar li a {
+    font-size: 14px;
+    padding: 6px 14px;
+    letter-spacing: 4px;
+    /* To cover the margin of text */
+    padding-top: 8px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> Banner <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.hero-banner .background-image {
+  background-image: url("../images/home/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 918px;
+}
+.hero-banner .content {
+  position: absolute;
+  left: 120px;
+  top: 57%;
+  transform: translateY(-50%);
+}
+.hero-banner .content h4 {
+  font: normal normal normal 24px/40px "Quasimoda";
+  letter-spacing: 9.12px;
+  margin-right: -9.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero-banner .content h1 {
+  font: normal normal normal 70px/87px "Anton";
+  letter-spacing: 14px;
+  margin-right: -14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1536px) {
+  .hero-banner .background-image {
+    height: calc(100vh - 30px);
+  }
+  .hero-banner .content h4 {
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 7.12px;
+    margin-right: -7.2px;
+  }
+  .hero-banner .content h1 {
+    font-size: 57px;
+    line-height: 75px;
+    letter-spacing: 10px;
+    margin-right: -10px;
+  }
+  .hero-banner .content {
+    left: 75px;
+    top: 55%;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>> Gibbstopping Queenstown <<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.gibbstopping-queenstown {
+  height: fit-content;
+  background: #f5ea04;
+}
+.gibbstopping-queenstown h1 {
+  text-align: center;
+  font: normal normal normal 85px/67px "Anton";
+  letter-spacing: 17px;
+  color: #2b2e34;
+  margin: 0;
+  padding: 64px 0px;
+  text-shadow: 6px 6px 8px #c09902;
+}
+
+/* Text was braking into two line at 1800px */
+@media screen and (max-width: 1800px) {
+  .gibbstopping-queenstown h1 {
+    font-size: 75px;
+    line-height: 67px;
+    letter-spacing: 17px;
+    padding: 54px 0px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .gibbstopping-queenstown h1 {
+    font-size: 60px;
+    letter-spacing: 11px;
+    padding: 35px 0px;
+  }
+}
+
+/* >>>>> Gibbstopping Section 1 & 2 <<<<< */
+
+.gibbstopping-section-1 {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+.gibbstopping-section-1 .text-area {
+  position: relative;
+  padding: 87px 119px;
+}
+@media screen and (min-width: 2200px) {
+  .gibbstopping-section-1 .text-area {
+    position: relative;
+    padding: 145px 119px;
+  }
+}
+.gibbstopping-section-1.section-2 .text-area {
+  padding-top: 124px;
+}
+.gibbstopping-section-1 .text-area h3 {
+  padding-bottom: 10px;
+}
+.gibbstopping-section-1 .text-area p {
+  font: normal normal normal 17px/26px "Quasimoda";
+  letter-spacing: 0.34px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.gibbstopping-section-1 .text-area a {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  margin-right: -6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+.gibbstopping-section-1 .text-area span span {
+  padding: 0px 30px;
+}
+.gibbstopping-section-1 .image-area {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.gibbstopping-section-1 .image-area img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1800px) {
+  .gibbstopping-section-1 .text-area p br {
+    display: none;
+  }
+  .gibbstopping-section-1 .text-area p span br {
+    display: block;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .gibbstopping-section-1 .text-area,
+  .gibbstopping-section-1.section-2 .text-area {
+    padding: 57px 75px;
+  }
+  .gibbstopping-section-1 .text-area a {
+    font-size: 15px;
+    letter-spacing: 5.84px;
+    margin-right: -5.84px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> Our Services <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.homepage-section-our-services {
+  height: fit-content;
+  background: #f5ea04;
+}
+.homepage-section-our-services h2 {
+  text-align: left;
+  color: #2b2e34;
+  margin: 0;
+  padding: 35px 119px;
+}
+@media screen and (max-width: 1536px) {
+  .homepage-section-our-services h2 {
+    padding: 15px 75px;
+  }
+}
+
+/* >>>>>>>> Our Services Section-1 <<<<<<< */
+
+.our-services-section-1 {
+  height: fit-content;
+  padding: 131px 0px;
+}
+.our-services-section-1 .col-lg-4 {
+  margin: 0;
+  padding: 0;
+}
+.our-services-section-1 .icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-services-section-1 .icon-text .icon {
+  height: 86px;
+  padding-right: 60px;
+}
+.our-services-section-1 .icon-text .text h1 {
+  font: normal normal normal 30px/41px "Anton";
+  letter-spacing: 2.4px;
+  color: #2b2e34;
+  text-transform: uppercase;
+  margin: 0;
+}
+@media screen and (max-width: 1536px) {
+  .our-services-section-1 {
+    padding: 70px 0px;
+  }
+  .our-services-section-1 .icon-text .icon {
+    height: 56px;
+    padding-right: 30px;
+  }
+  .our-services-section-1 .icon-text .icon img {
+    height: 56px;
+  }
+  .our-services-section-1 .icon-text .text h1 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+
+/* >>>>>>>> Our Services Section-2 <<<<<<< */
+
+.our-services-section-2 {
+  height: fit-content;
+  text-align: center;
+}
+.our-services-section-2 .col-lg-4 {
+  margin: 0;
+  padding: 0;
+}
+.our-services-section-2 .the-background {
+  position: relative;
+  width: 100%;
+  height: 731px;
+  background-color: #a8a8a8;
+  box-shadow: inset 0 -300px 300px -100px rgba(26, 26, 26, 0.767);
+}
+.our-services-section-2 .the-background-1 {
+  background: url("../images/home/high-quality.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-2 {
+  background: url("../images/home/efficient.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-3 {
+  background: url("../images/home/experienced.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .content {
+  text-align: left;
+  position: absolute;
+  padding: 66px 120px;
+  bottom: 0;
+}
+.our-services-section-2 .content h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.our-services-section-2 .content p,
+.our-services-section-2 .content a {
+  font: lighter lighter normal 18px/26px "Quasimoda";
+  color: #ffffff;
+}
+.our-services-section-2 .content p {
+  letter-spacing: 0.36px;
+  text-align: justify;
+}
+.our-services-section-2 .content a {
+  letter-spacing: 3.6px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1536px) {
+  .our-services-section-2 .the-background {
+    height: 631px;
+  }
+  .our-services-section-2 .content {
+    padding: 66px 75px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Client Feedback <<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.feedback-from-our-clients {
+  height: fit-content;
+  background: #f5ea04;
+}
+.feedback-from-our-clients h2 {
+  text-align: left;
+  color: #2b2e34;
+  margin: 0;
+  padding: 35px 119px;
+}
+@media screen and (max-width: 1536px) {
+  .feedback-from-our-clients h2 {
+    padding: 15px 75px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>> Testimonial <<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+.testimoninal-slider {
+  position: relative;
+  height: fit-content;
+  padding: 74px 119px;
+  padding-bottom: 50px;
+}
+.testimoninal-slider .feedback {
+  display: flex;
+  justify-content: center;
+}
+.feedback .image-icon {
+  padding-right: 148px;
+}
+.feedback .image-icon img {
+  height: 185px;
+}
+.testimoninal-slider .client-feedback h2 {
+  color: #2b2e34;
+  margin-bottom: 30px;
+}
+.testimoninal-slider .client-feedback p {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+.prev-feedback,
+.next-feedback {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  color: #202020;
+  font-size: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.prev-feedback:hover,
+.next-feedback:hover {
+  color: #fae106;
+}
+.prev-feedback {
+  left: 4%;
+}
+.next-feedback {
+  right: 4%;
+}
+/* Slider was not fittng at 1660px width */
+@media screen and (max-width: 1660px) {
+  .testimoninal-slider {
+    padding: 60px 110px;
+    padding-bottom: 36px;
+  }
+  .feedback .image-icon {
+    padding-right: 75px;
+  }
+  .feedback .image-icon img {
+    height: 135px;
+  }
+  .feedback-from-our-clients h2 {
+    padding: 20px 75px;
+  }
+  .testimoninal-slider .client-feedback h2 {
+    font-size: 29px;
+    line-height: 42px;
+  }
+  .testimoninal-slider .client-feedback p {
+    font-size: 16px;
+    letter-spacing: 4.84px;
+  }
+  .prev-feedback,
+  .next-feedback {
+    height: 50px;
+  }
+  .prev-feedback {
+    left: 4%;
+  }
+  .next-feedback {
+    right: 4%;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
+
+footer {
+  height: fit-content;
+  margin: 0;
+  background: #f5ea04;
+  overflow: hidden;
+}
+.footer {
+  padding: 0px 119px;
+}
+footer .bottom-head {
+  width: 488px;
+  height: 15px;
+  background: #2b2e34;
+}
+footer .footer-content .left,
+footer .footer-content .middle,
+footer .footer-content .right {
+  padding: 0;
+}
+footer .footer-content .left {
+  width: 48%;
+  padding: 35px 0px;
+}
+footer .footer-content .middle {
+  width: 18%;
+}
+footer .footer-content .right {
+  width: 32%;
+}
+footer .footer-content {
+  padding: 63px 0px;
+  padding-bottom: 120px;
+}
+footer .footer-content .our-experience p {
+  font: normal normal normal 16px/27px "Quasimoda";
+  letter-spacing: 6.08px;
+  color: #2b2e34;
+}
+footer .footer-content .our-experience h1 {
+  font: normal normal normal 50px/61px "Anton";
+  letter-spacing: 12px;
+  color: #2b2e34;
+}
+footer .footer-content .company ul {
+  list-style: none;
+  padding: 35px;
+  padding-top: 40px;
+  position: relative;
+}
+footer .footer-content .company ul img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .footer-content .company ul li {
+  padding-bottom: 23px;
+}
+footer .footer-content .company ul li:last-child {
+  padding-bottom: 0px;
+}
+footer .footer-content .company ul li a,
+footer .footer-content .contacts ul li a {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+footer .footer-content .contacts ul {
+  list-style: none;
+  padding: 35px;
+  padding-top: 30px;
+  position: relative;
+}
+footer .footer-content .contacts ul img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .footer-content .contacts ul li {
+  padding-bottom: 23px;
+}
+footer .footer-content .contacts ul li.quoto {
+  padding-bottom: 44px;
+}
+footer .footer-content .contacts ul li.email {
+  padding-bottom: 15px;
+}
+footer .footer-content .contacts ul li:last-child {
+  padding-bottom: 0px;
+}
+footer .footer-content .contacts ul li a {
+  text-transform: uppercase;
+}
+footer .footer-content .contacts ul li .get-a-quoto {
+  font: normal normal bold 18px/67px "Quasimoda";
+  text-decoration: none;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  padding: 16px 18px;
+  padding-bottom: 14px;
+  margin: 0;
+  background: #2b2e34;
+}
+footer .footer-content .contacts ul li .icons {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-content .contacts ul li .icons li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+footer .footer-content .contacts ul li .icons li a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1800px) {
+  footer .logo img {
+    width: 400px;
+  }
+  footer .bottom-head {
+    width: 400px;
+  }
+  footer .footer-content .left {
+    width: 43%;
+  }
+  footer .footer-content .right {
+    width: 37%;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .footer {
+    padding: 0px 75px;
+  }
+  footer .footer-content {
+    padding: 43px 0px;
+    padding-bottom: 80px;
+  }
+  footer .logo img {
+    width: 350px;
+  }
+  footer .bottom-head {
+    width: 350px;
+  }
+  footer .footer-content .our-experience h1 {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 8px;
+    color: #2b2e34;
+  }
+  footer .footer-content .company ul li {
+    padding-bottom: 17px;
+  }
+  footer .footer-content .contacts ul li .get-a-quoto {
+    font-size: 15px;
+    padding: 14px 15px;
+    padding-bottom: 12px;
+  }
+  footer .footer-content .contacts ul li.quoto {
+    padding-bottom: 33px;
+  }
+  footer .footer-content .contacts ul li.tele {
+    padding-bottom: 20px;
+  }
+  footer .footer-content .contacts ul li.email {
+    padding-bottom: 16px;
+  }
+  footer .footer-content .contacts ul li:last-child {
+    padding-bottom: 0px;
+  }
+  footer .footer-content .contacts ul li a,
+  footer .footer-content .company ul li a {
+    font: normal normal normal 18px/30px "Quasimoda";
+    font-size: 16px;
+    letter-spacing: 4.84px;
+  }
+}
+
+/* >>>>>>>>>>>>>>>> Mini Footer <<<<<<<<<<<<<< */
+
+.mini-footer {
+  background: #57575a;
+  padding: 15px 119px;
+  padding-bottom: 12px;
+  display: flex;
+}
+.mini-footer p {
+  margin: 0;
+  font: normal normal normal 16px/27px "Quasimoda";
+  letter-spacing: 6.08px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.mini-footer .left {
+  width: 50%;
+  padding: 0px 10px;
+}
+.mini-footer .right {
+  width: 50%;
+  padding: 0px 76px;
+  text-align: right;
+}
+@media screen and (max-width: 1800px) {
+  .mini-footer p {
+    font-size: 14px;
+    letter-spacing: 4.3px;
+  }
+  .mini-footer .right {
+    padding: 0px 56px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .mini-footer {
+    background: #57575a;
+    padding: 7px 75px;
+    padding-bottom: 4px;
+  }
+  .mini-footer p {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+  .mini-footer .right {
+    padding: 0px 80px;
+  }
+}

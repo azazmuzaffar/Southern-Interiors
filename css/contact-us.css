@@ -1,0 +1,145 @@
+/* All the new changes will for "OUR TEAM" page will make here */
+
+/* >>>>>>>>>>>>> OUR TEAM <<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> BANNER <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.hero-banner .background-image {
+  background-image: url("../images/contact-us/banner.jpg");
+}
+.hero-banner .content {
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Contact Form <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.contact-us {
+  height: fit-content;
+  padding: 100px 119px 170px 119px;
+}
+.contact-us .col-lg-5,
+.contact-us .col-lg-7 {
+  padding: 0;
+}
+.contact-us h1 {
+  font: normal normal normal 30px/41px "Anton";
+  letter-spacing: 2.4px;
+  color: #2b2e34;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* >>> Contact Details <<< */
+
+.contact-us .contact-details ul {
+  list-style: none;
+}
+.contact-us .contact-details a {
+  color: unset;
+}
+.contact-us .email-phone ul {
+  margin-bottom: 50px;
+}
+.contact-us .email-phone ul li {
+  margin-bottom: 20px;
+}
+.contact-us .email-phone a {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  text-transform: uppercase;
+}
+.contact-us .contact-details .social-icons ul li {
+  display: inline;
+  margin-right: 5px;
+}
+
+/* >>> Contact Form <<< */
+
+.contact-us .contact-form h1 {
+  margin-bottom: 40px;
+}
+.contact-us .contact-form .col-lg-12 {
+  margin-bottom: 50px;
+}
+.contact-us .contact-form .col-lg-12.second-last {
+  margin-bottom: 35px;
+}
+.contact-us .contact-form .col-lg-12:last-child {
+  text-align: right;
+}
+.contact-us .contact-form input,
+.contact-us .contact-form textarea,
+.contact-us .contact-form label {
+  font: normal normal normal 18px/30px "Quasimoda";
+  letter-spacing: 6.84px;
+  color: #2b2e34;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+.contact-us .contact-form input[type="text"] {
+  width: 100%;
+  border-bottom: 1px solid #0410ba;
+  padding-bottom: 5px;
+}
+.contact-us .contact-form input[type="text"]::placeholder,
+.contact-us .contact-form input[type="text"]::placeholder {
+  color: #2b2e34;
+}
+.contact-us .contact-form textarea {
+  border: 1px solid #0410ba;
+  padding: 10px;
+  height: 165px;
+  width: 100%;
+}
+.contact-us .contact-form input[type="submit"] {
+  text-transform: uppercase;
+  font: bold normal normal 18px/30px "Quasimoda";
+  letter-spacing: 5.4px;
+  color: white;
+  background: #2b2e34;
+  padding: 12px 15px 9px 20.4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1536px) {
+  .contact-us {
+    height: fit-content;
+    padding: 80px 75px 140px 75px;
+  }
+
+  /* >>> Contact Details <<< */
+
+  .contact-us .email-phone a {
+    font-size: 16px;
+    letter-spacing: 4.84px;
+  }
+  .contact-us .email-phone ul li {
+    margin-bottom: 10px;
+  }
+
+  /* >>> Contact Form <<< */
+
+  .contact-us .contact-form .col-lg-12 {
+    margin-bottom: 40px;
+  }
+  .contact-us .contact-form input[type="submit"] {
+    font-size: 16px;
+    letter-spacing: 4.4px;
+    padding: 10px 13px 7px 17.4px;
+  }
+  .contact-us .contact-form input,
+  .contact-us .contact-form textarea,
+  .contact-us .contact-form label {
+    font: normal normal normal 16px/30px "Quasimoda";
+    letter-spacing: 5px;
+  }
+}

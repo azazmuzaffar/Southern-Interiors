@@ -1,0 +1,48 @@
+/* All the new changes will for "OUR TEAM" page will make here */
+
+/* >>>>>>>>>>>>> OUR TEAM <<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>> BANNER <<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.hero-banner .background-image {
+  background-image: url("../images/our-team/banner.jpg");
+}
+
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>> Team Members <<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
+
+.our-services-section-2 .the-background {
+  position: relative;
+  height: 581px;
+  width: 100%;
+}
+.our-services-section-2 .the-background-1 {
+  background: url("../images/our-team/team-members/brenden.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-2 {
+  background: url("../images/our-team/team-members/dang.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-services-section-2 .the-background-3 {
+  /* Daniel image will be added here */
+  background: url("");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1800px) {
+  .feedback-from-client-1 .client-feedback h1 br {
+    display: none;
+  }
+  .gibbstopping-section-1 .row {
+    width: 75%;
+  }
+}
