@@ -2,9 +2,8 @@
 
 ## ++++ Updates ++++
 
-+ The issues are fixed now.
-+ Slider has been added to the testimonial.
-+ And the website is looking perfect on (2500 * 1440), it looks perfect on above 2500px as well.
++ CSS code repitition is very minimal now.
++ Now the website design will also be looking perfect on various Desktop devices.
 
 <br/>
 
