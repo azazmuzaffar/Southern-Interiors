@@ -31,6 +31,12 @@ h3 {
     letter-spacing: 2.2px;
   }
 }
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>> Navbar <<<<<<<<<<<<<< */
@@ -44,7 +50,7 @@ h3 {
   width: 100%;
   padding: 0px 44px 0px 119px;
   background: transparent;
-  z-index: 99;
+  z-index: 9999;
 }
 .navbar li a {
   text-decoration: none;
@@ -104,7 +110,7 @@ h3 {
 
 @media screen and (max-width: 1536px) {
   .navbar {
-    padding: 0px 34px 0px 69px;
+    padding: 0px 34px 0px 75px;
   }
   .navbar .logo {
     width: 350px;
@@ -115,6 +121,131 @@ h3 {
     letter-spacing: 4px;
     /* To cover the margin of text */
     padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Nav Toggle */
+  .nav-toggle {
+    position: absolute;
+    z-index: 999999;
+    top: 30px;
+    right: 40px;
+  }
+  .nav-toggle span {
+    display: block;
+    height: 4px;
+    width: 40px;
+    background: white;
+    margin-top: 8px;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+  .nav-toggle span:nth-child(3) {
+    opacity: 1;
+    transition: 0.1s;
+  }
+  .responsive-nav .nav-toggle span:nth-child(1) {
+    transform: rotate(45deg);
+    transition: 0.6s;
+  }
+  .responsive-nav .nav-toggle span:nth-child(2) {
+    transform: rotate(-45deg);
+    transition: 0.6s;
+  }
+  .responsive-nav .nav-toggle span:nth-child(3) {
+    background: white;
+    opacity: 0;
+    transition: 0.1s;
+  }
+  /* Navbar */
+  .navbar {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* Overlay [ transparent #000 ] */
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background: rgba(0, 0, 0, 0.377);
+    transition: transform 100ms 160ms ease;
+  }
+  .responsive-nav .overlay {
+    transform: translateX(0);
+    transition: transform 100ms 160ms ease;
+  }
+  /* Mobile nav that slide from left */
+  .navbar .nav {
+    position: fixed;
+    width: 500px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    background: white;
+    transition: transform 200ms 200ms ease;
+    transform: translateX(-500px);
+  }
+  /* Mobile nav slide to when click */
+  .responsive-nav .nav {
+    display: block;
+    transform: translateX(0px);
+    transition: transform 200ms 260ms ease;
+  }
+  /* logo becomes fixed to show on nav */
+  .navbar .logo {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    z-index: 9999;
+  }
+  .responsive-nav .logo {
+    position: fixed;
+  }
+  .navbar li {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 75px;
+  }
+  .navbar li a {
+    color: #000000;
+    font-size: 25px;
+    padding: 20px 30px;
+    padding-top: 25px;
+    display: block;
+  }
+  .navbar li a.active {
+    background: transparent;
+    color: #0000c2;
+  }
+  .navbar li a {
+    margin-top: 10px;
+    background: none;
+  }
+  .navbar li a:hover {
+    background: none;
+  }
+  .navbar li a.get-a-quoto {
+    padding: 20px 30px;
+    padding-top: 25px;
+    background: transparent;
+    color: #000;
+    font-weight: 500;
+  }
+  /* show the design in bottom of nav mob */
+  .--bottom-- {
+    width: 350px;
+    height: 20px;
+    background: #f5ea04;
+    position: absolute;
+    bottom: 0;
+    left: 75px;
   }
 }
 
@@ -171,6 +302,11 @@ h3 {
     top: 55%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .hero-banner .background-image {
+    height: calc(100vh - 20px);
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
 /* >>>>>> Gibbstopping Queenstown <<<<<<< */
@@ -214,6 +350,7 @@ h3 {
   height: fit-content;
   overflow: hidden;
 }
+
 .gibbstopping-section-1 .text-area {
   position: relative;
   padding: 87px 119px;
@@ -272,6 +409,17 @@ h3 {
     font-size: 15px;
     letter-spacing: 5.84px;
     margin-right: -5.84px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gibbstopping-section-1 .text-area.make-down {
+    order: 12;
+  }
+  .gibbstopping-section-1 .text-area.make-up {
+    order: 1;
+  }
+  .gibbstopping-section-1 .image-area {
+    width: 100%;
   }
 }
 
@@ -337,14 +485,13 @@ h3 {
     line-height: 34px;
   }
 }
-
 /* >>>>>>>> Our Services Section-2 <<<<<<< */
 
 .our-services-section-2 {
   height: fit-content;
   text-align: center;
 }
-.our-services-section-2 .col-lg-4 {
+.our-services-section-2 .col-xl-4 {
   margin: 0;
   padding: 0;
 }
@@ -508,6 +655,33 @@ h3 {
   }
   .next-feedback {
     right: 4%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .testimoninal-slider {
+    padding: 60px 35px;
+    padding-bottom: 36px;
+  }
+  .testimoninal-slider .feedback {
+    display: block;
+    text-align: center;
+  }
+  .feedback .image-icon {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+  .feedback .image-icon img {
+    height: 150px;
+    margin: 0 auto;
+  }
+  .feedback br {
+    display: none;
+  }
+  .prev-feedback {
+    top: 25%;
+  }
+  .next-feedback {
+    top: 25%;
   }
 }
 
@@ -691,6 +865,17 @@ footer .footer-content .contacts ul li .icons li a {
     letter-spacing: 4.84px;
   }
 }
+@media screen and (max-width: 1024px) {
+  footer .footer-content .left {
+    width: 68%;
+  }
+  footer .footer-content .middle {
+    width: 32%;
+  }
+  footer .footer-content .right {
+    width: 100%;
+  }
+}
 
 /* >>>>>>>>>>>>>>>> Mini Footer <<<<<<<<<<<<<< */
 
@@ -737,5 +922,17 @@ footer .footer-content .contacts ul li .icons li a {
   }
   .mini-footer .right {
     padding: 0px 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mini-footer .right {
+    padding: 0px 10px;
+  }
+  .mini-footer .left {
+    width: 60%;
+    padding: 0px 10px;
+  }
+  .mini-footer .right {
+    width: 40%;
   }
 }

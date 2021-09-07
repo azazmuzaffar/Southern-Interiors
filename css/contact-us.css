@@ -117,7 +117,6 @@
   }
 
   /* >>> Contact Details <<< */
-
   .contact-us .email-phone a {
     font-size: 16px;
     letter-spacing: 4.84px;
@@ -127,7 +126,6 @@
   }
 
   /* >>> Contact Form <<< */
-
   .contact-us .contact-form .col-lg-12 {
     margin-bottom: 40px;
   }
@@ -141,5 +139,13 @@
   .contact-us .contact-form label {
     font: normal normal normal 16px/30px "Quasimoda";
     letter-spacing: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact-us {
+    padding: 80px 75px 80px 75px;
+  }
+  .contact-us .row .col-xl-5 {
+    margin-bottom: 70px;
   }
 }

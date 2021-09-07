@@ -44,6 +44,9 @@
       .page-not-found .wrapper .--image-- {
         margin-bottom: 6%;
       }
+      .page-not-found .wrapper .--image-- img {
+        width: 75%;
+      }
       /* -- >> Text <<-- */
       .page-not-found .wrapper .--text-- {
         margin-bottom: 5%;
@@ -67,6 +70,29 @@
         color: #ffffff;
         background: #0000c2;
         border-radius: 3px;
+      }
+      @media screen and (max-width: 1800px) {
+        .page-not-found {
+          padding: 0px 75px;
+        }
+        .page-not-found .logo img {
+          width: 400px;
+        }
+      }
+      @media screen and (max-width: 1536px) {
+        .page-not-found .logo img {
+          width: 350px;
+        }
+        .page-not-found .wrapper .--text-- h1 {
+          font-size: 32px;
+        }
+        .page-not-found .wrapper .--buttons-- ul li a {
+          font-size: 16px;
+        }
+        .page-not-found .wrapper .--image--,
+        .page-not-found .wrapper .--text-- {
+          margin-bottom: 4%;
+        }
       }
     </style>
   </head>

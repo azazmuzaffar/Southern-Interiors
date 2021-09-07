@@ -209,9 +209,9 @@ figure.image-effect:hover p {
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 3.2px;
-    color: #2c2e33;
-    text-transform: uppercase;
   }
+}
+@media screen and (max-width: 768px) {
 }
 
 /* The Modal (background) */

@@ -53,6 +53,14 @@
   color: #2b2e34;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .southern-interiors-qualities .content-inside {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 /* >>>>>> Paragraph Area <<<<<<< */
 
@@ -67,25 +75,35 @@
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 
 /* >>> Second column [ Text ] <<< */
-.percision .row .col-lg-4.sec-col-row {
+.percision .row .col-xl-4.sec-col-row {
   padding: 65px 50px 150px 50px;
   padding-right: 10%;
 }
 
 /* >>> Third column [ Text ] <<< */
-.percision .row .col-lg-4.third-col {
+.percision .row .col-xl-4.third-col {
   padding: 65px 50px 150px 0px;
   padding-right: 13%;
 }
 @media screen and (max-width: 1536px) {
   /* >>> Second column [ Text ] <<< */
-  .percision .row .col-lg-4.sec-col-row {
+  .percision .row .col-xl-4.sec-col-row {
     padding: 45px 50px 120px 50px;
     padding-right: 50px;
   }
   /* >>> Third column [ Text ] <<< */
-  .percision .row .col-lg-4.third-col {
+  .percision .row .col-xl-4.third-col {
     padding-right: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* >>> Second column [ Text ] <<< */
+  .percision .row .col-xl-4.sec-col-row {
+    padding: 50px 75px 20px 75px;
+  }
+  /* >>> Third column [ Text ] <<< */
+  .percision .row .col-xl-4.third-col {
+    padding: 0px 75px 50px 75px;
   }
 }
 
@@ -142,5 +160,24 @@
   }
   .project-type-section-1 .type.center {
     padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-type-section-1 {
+    padding: 55px 75px;
+  }
+  .project-type-section-1 .type {
+    max-width: 100%;
+  }
+  .project-type-section-1 .row,
+  .project-type-section-1 .row.first,
+  .project-type-section-1 .type.left,
+  .project-type-section-1 .type.right,
+  .project-type-section-1 .type.center {
+    margin: 0;
+    padding: 0;
+  }
+  .project-type-section-1 .col-lg-4 {
+    margin-top: 40px;
   }
 }

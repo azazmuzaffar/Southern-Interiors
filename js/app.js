@@ -1,4 +1,12 @@
 // >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>> TOGGLING NAVBAR <<<<<<<<<<
+// >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
+
+function toggle() {
+  $(".navbar").toggleClass("responsive-nav");
+}
+
+// >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
 // >>>>>>>>> TESTIMONIAL SLIDER <<<<<<<<<
 // >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
 
@@ -15,6 +23,25 @@ $slickEl.slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+// >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
+// >>>>>>>>>>> SERVICES SLIDER <<<<<<<<<<
+// >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
+
+/* Slider will only work at 768px */
+/* as the width get small for each component */
+if (window.matchMedia("(max-width: 768px)").matches) {
+  var $slickEl = $(".services-slider");
+
+  $slickEl.slick({
+    slidesToShow: 1,
+    dots: false,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 800,
+  });
+}
 
 // >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<
 // >>>>>>>>>>> IMAGE GALLERY <<<<<<<<<<<<
