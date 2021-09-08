@@ -59,6 +59,14 @@
   margin: 0;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 600px) {
+  .our-services-section-2 .content {
+    padding: 45px 20px;
+  }
+  .our-services-section-2 .content p {
+    margin-bottom: 8px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>> Wyuna Preserve <<<<<<<<<<< */
@@ -123,6 +131,20 @@
     padding: 20px 75px 50px 75px;
   }
 }
+@media screen and (max-width: 600px) {
+  /* >>> Second column [ Heading ] <<< */
+  .percision .row .col-xl-4.sec-col {
+    padding: 20px 20px 0px 20px;
+  }
+  /* >>> Second column [ Text ] <<< */
+  .percision .row .col-xl-4.sec-col-row {
+    padding: 40px 20px 20px 20px;
+  }
+  /* >>> Third column [ Text ] <<< */
+  .percision .row .col-xl-4.third-col {
+    padding: 10px 20px 40px 20px;
+  }
+}
 .percision .row .the-image {
   position: absolute;
 }
@@ -163,6 +185,23 @@
     padding: 15px 14px 13px 14px;
   }
 }
+@media screen and (max-width: 600px) {
+  .percision .the-text a {
+    font-size: 14px;
+    letter-spacing: 2.6px;
+    padding: 14px 14px 12px 14px;
+  }
+  .percision .the-heading-text p,
+  .percision .the-text p {
+    font-size: 14px;
+  }
+  .percision .the-heading-text p {
+    margin: 0;
+  }
+  .percision .the-heading-text {
+    padding: 20px 0px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<< */
 /* >>>>>> Interior projects Section-1 <<<<<<< */
@@ -176,9 +215,13 @@
     width: 75%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .gibbstopping-section-1 .row {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gibbstopping-section-1 .row {
+    width: 108%;
   }
 }

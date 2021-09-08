@@ -51,3 +51,8 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .gibbstopping-section-1 .row {
+    width: 108%;
+  }
+}

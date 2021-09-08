@@ -37,6 +37,12 @@ h3 {
     letter-spacing: 3px;
   }
 }
+@media screen and (max-width: 600px) {
+  h2,
+  h3 {
+    font-size: 25px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>> Navbar <<<<<<<<<<<<<< */
@@ -248,6 +254,50 @@ h3 {
     left: 75px;
   }
 }
+@media screen and (max-width: 600px) {
+  /* Nav Toggle */
+  .nav-toggle {
+    top: 17px;
+    right: 20px;
+  }
+  .nav-toggle span {
+    height: 3px;
+    width: 30px;
+    margin-top: 5px;
+  }
+  /* Mobile nav slide to when click */
+  .navbar .nav {
+    width: 260px;
+    transform: translateX(-260px);
+  }
+  .responsive-nav .nav {
+    transform: translateX(0px);
+  }
+  /* Navbar */
+  .navbar {
+    padding: 0px 20px 0px 0px;
+  }
+  .navbar .logo {
+    width: 220px;
+    left: 20px;
+  }
+  .navbar li {
+    padding: 0px 20px;
+  }
+  .navbar li a {
+    font-size: 15px;
+    padding: 5px 0px;
+  }
+  .navbar li a.get-a-quoto {
+    padding: 5px 0px;
+  }
+  /* show the design in bottom of nav mob */
+  .--bottom-- {
+    width: 220px;
+    left: 20px;
+    height: 15px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>> Banner <<<<<<<<<<<<<< */
@@ -307,6 +357,43 @@ h3 {
     height: calc(100vh - 20px);
   }
 }
+@media screen and (max-width: 600px) {
+  .hero-banner .background-image {
+    height: calc(100vh - 15px);
+  }
+  .hero-banner .content {
+    left: 20px;
+  }
+  .hero-banner .content h1 br {
+    display: none;
+  }
+  .hero-banner .content h4 {
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 3.92px;
+    margin: 0;
+  }
+  .hero-banner .content h1 {
+    font-size: 42px;
+    line-height: 55px;
+    letter-spacing: 7px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-banner .content h4 {
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 3.92px;
+    margin: 0;
+  }
+  .hero-banner .content h1 {
+    font-size: 38px;
+    line-height: 55px;
+    letter-spacing: 7px;
+    margin-right: 0px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
 /* >>>>>> Gibbstopping Queenstown <<<<<<< */
@@ -340,6 +427,17 @@ h3 {
     font-size: 60px;
     letter-spacing: 11px;
     padding: 35px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gibbstopping-queenstown h1 {
+    font-size: 32px;
+    letter-spacing: 7px;
+    line-height: 43px;
+    padding: 20px 10px;
+    /* +7 pixels for the letter spacing */
+    padding-left: 17px;
+    overflow: hidden;
   }
 }
 
@@ -421,6 +519,31 @@ h3 {
   .gibbstopping-section-1 .image-area {
     width: 100%;
   }
+  .gibbstopping-section-1.section-2 .col-xl-8 {
+    order: 12;
+  }
+  .gibbstopping-section-1.section-2 .col-xl-4 {
+    order: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gibbstopping-section-1 .text-area,
+  .gibbstopping-section-1.section-2 .text-area {
+    padding: 40px 20px;
+  }
+  .gibbstopping-section-1 .text-area span span {
+    display: none;
+  }
+  .gibbstopping-section-1 .text-area h3 {
+    padding-right: 0px;
+  }
+  .gibbstopping-section-1 .text-area p {
+    font-size: 14px;
+  }
+  .gibbstopping-section-1 .text-area a {
+    font-size: 13px;
+    letter-spacing: 3.84px;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
@@ -440,6 +563,12 @@ h3 {
 @media screen and (max-width: 1536px) {
   .homepage-section-our-services h2 {
     padding: 15px 75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .homepage-section-our-services h2 {
+    text-align: center;
+    padding: 10px 10px;
   }
 }
 
@@ -485,6 +614,16 @@ h3 {
     line-height: 34px;
   }
 }
+@media screen and (max-width: 600px) {
+  .our-services-section-1 {
+    padding: 40px 0px;
+  }
+  .our-services-section-1 .icon-text .text h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
 /* >>>>>>>> Our Services Section-2 <<<<<<< */
 
 .our-services-section-2 {
@@ -551,6 +690,18 @@ h3 {
     padding: 66px 75px;
   }
 }
+@media screen and (max-width: 600px) {
+  .our-services-section-2 .content h2 {
+    margin-bottom: 5px;
+  }
+  .our-services-section-2 .content p,
+  .our-services-section-2 .content a {
+    font-size: 14px;
+  }
+  .our-services-section-2 .content {
+    padding: 30px 20px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>> Client Feedback <<<<<<<<<< */
@@ -569,6 +720,13 @@ h3 {
 @media screen and (max-width: 1536px) {
   .feedback-from-our-clients h2 {
     padding: 15px 75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback-from-our-clients h2 {
+    text-align: center;
+    padding: 25px 10px;
+    line-height: 35px;
   }
 }
 
@@ -635,9 +793,6 @@ h3 {
   .feedback .image-icon img {
     height: 135px;
   }
-  .feedback-from-our-clients h2 {
-    padding: 20px 75px;
-  }
   .testimoninal-slider .client-feedback h2 {
     font-size: 29px;
     line-height: 42px;
@@ -682,6 +837,30 @@ h3 {
   }
   .next-feedback {
     top: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback .image-icon img {
+    height: 100px;
+    margin: 0 auto;
+  }
+  .testimoninal-slider .client-feedback h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .testimoninal-slider .client-feedback p {
+    font-size: 12px;
+    letter-spacing: 3.04px;
+  }
+  .prev-feedback,
+  .next-feedback {
+    height: 40px;
+  }
+  .prev-feedback {
+    top: 20%;
+  }
+  .next-feedback {
+    top: 20%;
   }
 }
 
@@ -876,6 +1055,52 @@ footer .footer-content .contacts ul li .icons li a {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0px 20px;
+  }
+  footer .logo img {
+    width: 100%;
+  }
+  footer .bottom-head {
+    width: 100%;
+  }
+  footer .footer-content {
+    padding: 40px 0px;
+  }
+  footer .footer-content .contacts ul li {
+    padding-bottom: 0px;
+  }
+  footer .footer-content .contacts ul li.quoto,
+  footer .footer-content .contacts ul li.tele {
+    padding-bottom: 7px;
+  }
+  footer .footer-content .contacts ul li.email {
+    margin-top: 7px;
+  }
+  footer .footer-content .contacts ul li.email a {
+    font-size: 12px;
+  }
+  footer .footer-content .left,
+  footer .footer-content .middle,
+  footer .footer-content .right {
+    width: 100%;
+  }
+  footer .footer-content .left {
+    margin-bottom: 20px;
+  }
+  footer .footer-content .company ul li {
+    padding-bottom: 10px;
+  }
+  footer .footer-content .contacts ul li .get-a-quoto {
+    font-size: 14px;
+  }
+  footer .footer-content .contacts ul li a,
+  footer .footer-content .company ul li a {
+    font-size: 14px;
+    letter-spacing: 2.84px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>> Mini Footer <<<<<<<<<<<<<< */
 
@@ -934,5 +1159,20 @@ footer .footer-content .contacts ul li .icons li a {
   }
   .mini-footer .right {
     width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mini-footer {
+    display: block;
+    padding: 7px 20px;
+  }
+  .mini-footer p {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+  .mini-footer .left,
+  .mini-footer .right {
+    text-align: center;
+    width: 100%;
   }
 }

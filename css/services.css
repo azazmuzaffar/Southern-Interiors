@@ -35,6 +35,12 @@
     padding: 75px 75px 60px 75px;
   }
 }
+@media screen and (max-width: 600px) {
+  .southern-interiors-qualities .background {
+    height: 600px;
+    padding: 50px 40px 40px 40px;
+  }
+}
 
 /* >>>>>> Heading Area <<<<<<< */
 
@@ -61,6 +67,15 @@
     transform: translateX(-50%);
   }
 }
+@media screen and (max-width: 600px) {
+  .southern-interiors-qualities .content-inside .headings p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .southern-interiors-qualities .content-inside .headings {
+    margin-bottom: 20px;
+  }
+}
 
 /* >>>>>> Paragraph Area <<<<<<< */
 
@@ -68,6 +83,11 @@
   font: normal normal normal 18px/26px "Quasimoda";
   letter-spacing: 0.36px;
   color: #000000;
+}
+@media screen and (max-width: 600px) {
+  .southern-interiors-qualities .content-inside .paragraph {
+    font-size: 14px;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
@@ -104,6 +124,16 @@
   /* >>> Third column [ Text ] <<< */
   .percision .row .col-xl-4.third-col {
     padding: 0px 75px 50px 75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* >>> Second column [ Text ] <<< */
+  .percision .row .col-xl-4.sec-col-row {
+    padding: 40px 20px 20px 20px;
+  }
+  /* >>> Third column [ Text ] <<< */
+  .percision .row .col-xl-4.third-col {
+    padding: 0px 20px 40px 20px;
   }
 }
 
@@ -179,5 +209,16 @@
   }
   .project-type-section-1 .col-lg-4 {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project-type-section-1 {
+    padding: 30px 10px;
+  }
+  .project-type-section-1 .type p {
+    font-size: 14px;
+  }
+  .project-type-section-1 .col-lg-4 {
+    margin-top: 20px;
   }
 }

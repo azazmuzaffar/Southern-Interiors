@@ -15,6 +15,16 @@
   top: 50%;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 1024px) {
+  .hero-banner .content {
+    left: 75px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-banner .content {
+    left: 20px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>> Contact Form <<<<<<<<<<< */
@@ -115,7 +125,6 @@
     height: fit-content;
     padding: 80px 75px 140px 75px;
   }
-
   /* >>> Contact Details <<< */
   .contact-us .email-phone a {
     font-size: 16px;
@@ -124,7 +133,6 @@
   .contact-us .email-phone ul li {
     margin-bottom: 10px;
   }
-
   /* >>> Contact Form <<< */
   .contact-us .contact-form .col-lg-12 {
     margin-bottom: 40px;
@@ -147,5 +155,39 @@
   }
   .contact-us .row .col-xl-5 {
     margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact-us {
+    padding: 60px 10px 60px 10px;
+  }
+  .contact-us h1 {
+    font-size: 25px;
+  }
+  .contact-us .row .col-xl-5 {
+    margin-bottom: 70px;
+  }
+  /* >>> Contact Details <<< */
+  .contact-us .email-phone ul {
+    margin-bottom: 30px;
+  }
+  .contact-us .email-phone a {
+    font-size: 14px;
+    letter-spacing: 2.14px;
+  }
+  .contact-us .email-phone ul li {
+    margin-bottom: 7px;
+  }
+  .contact-us .contact-form .col-lg-12 {
+    margin-bottom: 30px;
+  }
+  .contact-us .contact-form input,
+  .contact-us .contact-form textarea,
+  .contact-us .contact-form label {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+  .contact-us .contact-form input[type="submit"] {
+    font-size: 14px;
   }
 }

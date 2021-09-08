@@ -85,6 +85,25 @@
     padding-top: 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  .project-details {
+    padding: 0;
+  }
+  .project-details .details {
+    position: relative;
+    padding: 50px 40px 40px 40px;
+    width: 100%;
+  }
+  .project-details .details .box {
+    width: 100%;
+    border-right: 0;
+    left: 0%;
+  }
+  .project-details .details h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
 
 /* >>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<  */
 /* >>>>>>>>>>>>>> Gallery <<<<<<<<<<<<< */
@@ -212,6 +231,20 @@ figure.image-effect:hover p {
   }
 }
 @media screen and (max-width: 768px) {
+  .the-order-up {
+    order: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery {
+    margin-top: -200px;
+  }
+  .gallery .col-lg-4.services-included {
+    height: 350px;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
 }
 
 /* The Modal (background) */
