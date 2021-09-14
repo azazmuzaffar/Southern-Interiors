@@ -130,13 +130,16 @@ h3 {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1260px) {
   /* Nav Toggle */
   .nav-toggle {
     position: absolute;
     z-index: 999999;
     top: 30px;
     right: 40px;
+  }
+  .responsive-nav .nav-toggle {
+    position: fixed;
   }
   .nav-toggle span {
     display: block;
@@ -145,24 +148,24 @@ h3 {
     background: white;
     margin-top: 8px;
     border-radius: 10px;
-    transition: 0.6s;
+    transition: 0.5s;
   }
-  .nav-toggle span:nth-child(3) {
+  .nav-toggle span:nth-child(2) {
     opacity: 1;
     transition: 0.1s;
   }
   .responsive-nav .nav-toggle span:nth-child(1) {
-    transform: rotate(45deg);
-    transition: 0.6s;
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: 0.5s;
   }
   .responsive-nav .nav-toggle span:nth-child(2) {
-    transform: rotate(-45deg);
-    transition: 0.6s;
-  }
-  .responsive-nav .nav-toggle span:nth-child(3) {
     background: white;
     opacity: 0;
     transition: 0.1s;
+  }
+  .responsive-nav .nav-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -9px);
+    transition: 0.5s;
   }
   /* Navbar */
   .navbar {
@@ -220,7 +223,7 @@ h3 {
     padding: 0px 75px;
   }
   .navbar li a {
-    color: #000000;
+    color: #000;
     font-size: 25px;
     padding: 20px 30px;
     padding-top: 25px;
@@ -236,6 +239,7 @@ h3 {
   }
   .navbar li a:hover {
     background: none;
+    color: #000;
   }
   .navbar li a.get-a-quoto {
     padding: 20px 30px;
@@ -264,6 +268,12 @@ h3 {
     height: 3px;
     width: 30px;
     margin-top: 5px;
+  }
+  .responsive-nav .nav-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .responsive-nav .nav-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
   /* Mobile nav slide to when click */
   .navbar .nav {
@@ -765,7 +775,7 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 9999;
+  z-index: 99;
   color: #202020;
   font-size: 80px;
   cursor: pointer;
